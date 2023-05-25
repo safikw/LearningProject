@@ -7,31 +7,52 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
+import HealthKit
 
 struct ContentView : View {
+    @State var isSafik = false
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        VStack{
+            Button("Safik", action: {
+                isSafik.toggle()
+            })
+            ARViewContainer(isSafik: $isSafik).frame(width: 300, height: 300)
+        }
+        
     }
 }
 
 struct ARViewContainer: UIViewRepresentable {
+    @Binding var isSafik: Bool
     
     func makeUIView(context: Context) -> ARView {
         
+
         let arView = ARView(frame: .zero)
-        
-        // Load the "Box" scene from the "Experience" Reality File
-        let boxAnchor = try! Experience.loadBox()
-        
-        // Add the box anchor to the scene
-        arView.scene.anchors.append(boxAnchor)
-        
-        return arView
+                let configuration = ARFaceTrackingConfiguration()
+                arView.session.run(configuration)
+                
+                updateARView(arView) // Initial setup
+                
+                return arView
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        updateARView(uiView)
+        
+    }
     
+    private func updateARView(_ arView: ARView) {
+            if isSafik {
+                let boxAnchor = try! SafikExperience.loadBox()
+                arView.scene.anchors.removeAll()
+                arView.scene.anchors.append(boxAnchor)
+            } else {
+                arView.scene.anchors.removeAll()
+            }
+        }
 }
 
 #if DEBUG

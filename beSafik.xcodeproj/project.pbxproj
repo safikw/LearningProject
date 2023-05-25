@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		A2345CD22A1F5C8000925598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2345CD12A1F5C8000925598 /* AppDelegate.swift */; };
 		A2345CD42A1F5C8000925598 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2345CD32A1F5C8000925598 /* ContentView.swift */; };
-		A2345CD62A1F5C8000925598 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A2345CD52A1F5C8000925598 /* Experience.rcproject */; };
+		A2345CD62A1F5C8000925598 /* SafikExperience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A2345CD52A1F5C8000925598 /* SafikExperience.rcproject */; };
 		A2345CD82A1F5C8100925598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2345CD72A1F5C8100925598 /* Assets.xcassets */; };
 		A2345CDB2A1F5C8100925598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2345CDA2A1F5C8100925598 /* Preview Assets.xcassets */; };
+		A2345CE22A1F79B300925598 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2345CE12A1F79B300925598 /* HealthStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2345CCE2A1F5C8000925598 /* beSafik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beSafik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2345CD12A1F5C8000925598 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2345CD32A1F5C8000925598 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A2345CD52A1F5C8000925598 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		A2345CD52A1F5C8000925598 /* SafikExperience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SafikExperience.rcproject; sourceTree = "<group>"; };
 		A2345CD72A1F5C8100925598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2345CDA2A1F5C8100925598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2345CE12A1F79B300925598 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +57,10 @@
 			children = (
 				A2345CD12A1F5C8000925598 /* AppDelegate.swift */,
 				A2345CD32A1F5C8000925598 /* ContentView.swift */,
-				A2345CD52A1F5C8000925598 /* Experience.rcproject */,
+				A2345CD52A1F5C8000925598 /* SafikExperience.rcproject */,
 				A2345CD72A1F5C8100925598 /* Assets.xcassets */,
 				A2345CD92A1F5C8100925598 /* Preview Content */,
+				A2345CE12A1F79B300925598 /* HealthStore.swift */,
 			);
 			path = beSafik;
 			sourceTree = "<group>";
@@ -142,7 +145,8 @@
 			files = (
 				A2345CD42A1F5C8000925598 /* ContentView.swift in Sources */,
 				A2345CD22A1F5C8000925598 /* AppDelegate.swift in Sources */,
-				A2345CD62A1F5C8000925598 /* Experience.rcproject in Sources */,
+				A2345CD62A1F5C8000925598 /* SafikExperience.rcproject in Sources */,
+				A2345CE22A1F79B300925598 /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
