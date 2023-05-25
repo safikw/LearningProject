@@ -37,6 +37,8 @@ struct StepMotion : View {
             }
             else if activityType == "Automotive" {
                 Text("Buset! mikir dong disuruh jalan malah pake angkutan sapi")
+            }else {
+                Text("Kaga gerak apa?")
             }
             Text("hint: You need to take 1000 steps \nif you want to know me")
                 .padding(.top,80)
